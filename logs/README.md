@@ -17,7 +17,7 @@ As of now this logs support console, file,smtp and conn.
 First you must import it
 
 	import (
-		"github.com/astaxie/beego/logs"
+		"github.com/maidan-co/beego/logs"
 	)
 
 Then init a Log (example with console adapter)

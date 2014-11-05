@@ -47,7 +47,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/astaxie/beego/orm"
+	"github.com/maidan-co/beego/orm"
 	_ "github.com/go-sql-driver/mysql" // import your used driver
 )
 

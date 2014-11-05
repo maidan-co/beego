@@ -38,8 +38,8 @@
 //
 // Usage:
 // import(
-//   _ "github.com/astaxie/beego/session/postgresql"
-//   "github.com/astaxie/beego/session"
+//   _ "github.com/maidan-co/beego/session/postgresql"
+// "github.com/maidan-co/beegogo/session"
 // )
 //
 //	func init() {
@@ -54,9 +54,7 @@ import (
 	"database/sql"
 	"net/http"
 	"sync"
-	"time"
-
-	"github.com/astaxie/beego/session"
+	"time"github.com/maidan-co/beegoeego/session"
 
 	_ "github.com/lib/pq"
 )

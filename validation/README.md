@@ -18,7 +18,7 @@ Test:
 Direct Use:
 
 	import (
-		"github.com/astaxie/beego/validation"
+		"github.com/maidan-co/beego/validation"
 		"log"
 	)
 
@@ -49,7 +49,7 @@ Direct Use:
 Struct Tag Use:
 
 	import (
-		"github.com/astaxie/beego/validation"
+		"github.com/maidan-co/beego/validation"
 	)
 
 	// validation function follow with "valid" tag

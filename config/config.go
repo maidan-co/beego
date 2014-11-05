@@ -14,7 +14,7 @@
 
 // Usage:
 // import(
-//   "github.com/astaxie/beego/config"
+//   "github.com/maidan-co/beego/config"
 // )
 //
 //  cnf, err := config.NewConfig("ini", "config.conf")

@@ -16,8 +16,8 @@
 //
 // Simple Usage:
 //	import(
-//		"github.com/astaxie/beego"
-//		"github.com/astaxie/beego/plugins/apiauth"
+//		"github.com/maidan-co/beego"
+//		"github.com/maidan-co/beego/plugins/apiauth"
 //	)
 //
 //	func main(){
@@ -64,8 +64,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/context"
+	"github.com/maidan-co/beego"
+	"github.com/maidan-co/beego/context"
 )
 
 type AppIdToAppSecret func(string) string

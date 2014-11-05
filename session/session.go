@@ -16,7 +16,7 @@
 //
 // Usage:
 // import(
-//   "github.com/astaxie/beego/session"
+//   "github.com/maidan-co/beego/session"
 // )
 //
 //	func init() {
@@ -40,7 +40,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/astaxie/beego/utils"
+	"github.com/maidan-co/beego/utils"
 )
 
 // SessionStore contains all data for one session process with specific id.

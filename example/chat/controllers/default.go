@@ -7,7 +7,7 @@
 package controllers
 
 import (
-	"github.com/astaxie/beego"
+	"github.com/maidan-co/beego"
 )
 
 type MainController struct {

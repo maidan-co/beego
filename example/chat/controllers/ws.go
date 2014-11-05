@@ -12,7 +12,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/astaxie/beego"
+	"github.com/maidan-co/beego"
 	"github.com/gorilla/websocket"
 )
 

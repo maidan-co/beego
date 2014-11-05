@@ -16,7 +16,7 @@
 //
 // package main
 //
-// import "github.com/astaxie/beego"
+// import "github.com/maidan-co/beego"
 //
 // func main() {
 //  	beego.Run()
@@ -33,8 +33,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/astaxie/beego/middleware"
-	"github.com/astaxie/beego/session"
+	"github.com/maidan-co/beego/middleware"
+	"github.com/maidan-co/beego/session"
 )
 
 // beego web framework version.

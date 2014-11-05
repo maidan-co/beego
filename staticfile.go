@@ -21,9 +21,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/astaxie/beego/context"
-	"github.com/astaxie/beego/middleware"
-	"github.com/astaxie/beego/utils"
+	"github.com/maidan-co/beego/context"
+	"github.com/maidan-co/beego/middleware"
+	"github.com/maidan-co/beego/utils"
 )
 
 func serverStaticRouter(ctx *context.Context) {

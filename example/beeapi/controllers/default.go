@@ -9,8 +9,8 @@ package controllers
 import (
 	"encoding/json"
 
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/example/beeapi/models"
+	"github.com/maidan-co/beego"
+	"github.com/maidan-co/beego/example/beeapi/models"
 )
 
 type ObjectController struct {

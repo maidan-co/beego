@@ -11,8 +11,8 @@
 package main
 
 import (
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/example/beeapi/controllers"
+	"github.com/maidan-co/beego"
+	"github.com/maidan-co/beego/example/beeapi/controllers"
 )
 
 //		Objects

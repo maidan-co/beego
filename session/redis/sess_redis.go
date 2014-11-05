@@ -20,8 +20,8 @@
 //
 // Usage:
 // import(
-//   _ "github.com/astaxie/beego/session/redis"
-//   "github.com/astaxie/beego/session"
+//   _ "github.com/maidan-co/beego/session/redis"
+// "github.com/maidan-co/beegogo/session"
 // )
 //
 //	func init() {
@@ -36,9 +36,7 @@ import (
 	"net/http"
 	"strconv"
 	"strings"
-	"sync"
-
-	"github.com/astaxie/beego/session"
+	"sync"github.com/maidan-co/beegoeego/session"
 
 	"github.com/garyburd/redigo/redis"
 )

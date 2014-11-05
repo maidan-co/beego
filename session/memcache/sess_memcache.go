@@ -20,8 +20,8 @@
 //
 // Usage:
 // import(
-//   _ "github.com/astaxie/beego/session/memcache"
-//   "github.com/astaxie/beego/session"
+//   _ "github.com/maidan-co/beego/session/memcache"
+// "github.com/maidan-co/beegogo/session"
 // )
 //
 //	func init() {
@@ -35,9 +35,7 @@ package session
 import (
 	"net/http"
 	"strings"
-	"sync"
-
-	"github.com/astaxie/beego/session"
+	"sync"github.com/maidan-co/beegoeego/session"
 
 	"github.com/bradfitz/gomemcache/memcache"
 )

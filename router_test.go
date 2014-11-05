@@ -19,7 +19,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/astaxie/beego/context"
+	"github.com/maidan-co/beego/context"
 )
 
 type TestController struct {

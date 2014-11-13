@@ -34,8 +34,8 @@ package logs
 
 import (
 	"fmt"
-	"path"
-	"runtime"
+	//"path"
+	//"runtime"
 	"sync"
 )
 
@@ -154,13 +154,13 @@ func (bl *BeeLogger) writerMsg(loglevel int, msg string) error {
 	lm := new(logMsg)
 	lm.level = loglevel
 	if bl.enableFuncCallDepth {
-		_, file, line, ok := runtime.Caller(bl.loggerFuncCallDepth)
-		if ok {
-			_, filename := path.Split(file)
-			lm.msg = fmt.Sprintf("[%s:%d] %s", filename, line, msg)
-		} else {
-			lm.msg = msg
-		}
+		//_, file, line, ok := runtime.Caller(bl.loggerFuncCallDepth)
+		//if ok {
+		//	_, filename := path.Split(file)
+		//	lm.msg = fmt.Sprintf("[%s:%d] %s", filename, line, msg)
+		//} else {
+		lm.msg = msg
+		//}
 	} else {
 		lm.msg = msg
 	}
@@ -204,49 +204,49 @@ func (bl *BeeLogger) startLogger() {
 
 // Log EMERGENCY level message.
 func (bl *BeeLogger) Emergency(format string, v ...interface{}) {
-	msg := fmt.Sprintf("[M] "+format, v...)
+	msg := fmt.Sprintf(format, v...)
 	bl.writerMsg(LevelEmergency, msg)
 }
 
 // Log ALERT level message.
 func (bl *BeeLogger) Alert(format string, v ...interface{}) {
-	msg := fmt.Sprintf("[A] "+format, v...)
+	msg := fmt.Sprintf(format, v...)
 	bl.writerMsg(LevelAlert, msg)
 }
 
 // Log CRITICAL level message.
 func (bl *BeeLogger) Critical(format string, v ...interface{}) {
-	msg := fmt.Sprintf("[C] "+format, v...)
+	msg := fmt.Sprintf(format, v...)
 	bl.writerMsg(LevelCritical, msg)
 }
 
 // Log ERROR level message.
 func (bl *BeeLogger) Error(format string, v ...interface{}) {
-	msg := fmt.Sprintf("[E] "+format, v...)
+	msg := fmt.Sprintf(format, v...)
 	bl.writerMsg(LevelError, msg)
 }
 
 // Log WARNING level message.
 func (bl *BeeLogger) Warning(format string, v ...interface{}) {
-	msg := fmt.Sprintf("[W] "+format, v...)
+	msg := fmt.Sprintf(format, v...)
 	bl.writerMsg(LevelWarning, msg)
 }
 
 // Log NOTICE level message.
 func (bl *BeeLogger) Notice(format string, v ...interface{}) {
-	msg := fmt.Sprintf("[N] "+format, v...)
+	msg := fmt.Sprintf(format, v...)
 	bl.writerMsg(LevelNotice, msg)
 }
 
 // Log INFORMATIONAL level message.
 func (bl *BeeLogger) Informational(format string, v ...interface{}) {
-	msg := fmt.Sprintf("[I] "+format, v...)
+	msg := fmt.Sprintf(format, v...)
 	bl.writerMsg(LevelInformational, msg)
 }
 
 // Log DEBUG level message.
 func (bl *BeeLogger) Debug(format string, v ...interface{}) {
-	msg := fmt.Sprintf("[D] "+format, v...)
+	msg := fmt.Sprintf(format, v...)
 	bl.writerMsg(LevelDebug, msg)
 }
 
